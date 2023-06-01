@@ -7,6 +7,7 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>Contact - Magic Brush Studios</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" defer src="script.js"></script>
 </head>
 <body class="p-3 m-0 border-0 bd-example bg-secondary">
 
@@ -25,7 +26,7 @@
             <div class="card bg-secondary-subtle">
                 <div class="card-body">
 
-                    <form class="row gy-2 gx-3 align-items-center">
+                    <form class="row d-flex flex-column gy-2 gx-3 align-items-center">
 
                         <div class="col-auto bg-secondary-subtle">
                             <label class="visually-hidden" for="autoSizingInputGroup1">Name</label>
@@ -74,6 +75,7 @@
         </div>
 
     </div>
+
     <br>
 
     <div class="row">
@@ -90,31 +92,31 @@
                 </thead>
                 <tbody id="artPrintTable" class="table-group-divider">
                 <tr>
-                    <th scope="row">R210</th>
+                    <th class="tableHeader" scope="row"></th>
                     <td>Elf Rogue</td>
                     <td>24x36</td>
                     <td>Available</td>
                 </tr>
                 <tr>
-                    <th scope="row">W454</th>
+                    <th class="tableHeader" scope="row"> </th>
                     <td>Gnome Wizard</td>
                     <td>36x48</td>
                     <td>Sold</td>
                 </tr>
                 <tr>
-                    <th scope="row">D654</th>
+                    <th class="tableHeader" scope="row"></th>
                     <td>Red Dragon</td>
                     <td>36x48</td>
                     <td>Available</td>
                 </tr>
                 <tr>
-                    <th scope="row">F547</th>
+                    <th class="tableHeader" scope="row"></th>
                     <td>Orc Fighter</td>
                     <td>12x20</td>
                     <td>In Progress</td>
                 </tr>
                 <tr>
-                    <th scope="row">A94</th>
+                    <th class="tableHeader" scope="row"></th>
                     <td>Elf Archer</td>
                     <td>36x48</td>
                     <td>In Progress</td>
@@ -138,11 +140,6 @@
 
     </div>
 </div>
-
-<!--call function to populate table on this page -->
-<script src="script.js">
-    populateArtTable();
-  </script>
 
 </body>
 </html>

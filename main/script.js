@@ -1,3 +1,12 @@
-const myCollection = document.getElementsByTagName("tr");
+let elementList = document.querySelectorAll(".tableHeader");
 
-document.getElementById("numberOfRows").innerHTML = "Total Art works: " + (myCollection.length - 1);
+document.getElementById("numberOfRows").textContent = "Total Art works: " + (elementList.length );
+
+elementList.forEach(element => {
+element.textContent = getRandomInt(1000);
+})
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
