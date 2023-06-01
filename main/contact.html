@@ -31,7 +31,7 @@
                             <label class="visually-hidden" for="autoSizingInputGroup1">Name</label>
                             <div class="input-group">
                                 <div class="input-group-text">Name</div>
-                                <input type="text" class="form-control" id="autoSizingInputGroup1">
+                                <input type="text" class="form-control" required id="autoSizingInputGroup1">
                             </div>
                         </div>
 
@@ -39,14 +39,14 @@
                             <label class="visually-hidden" for="autoSizingInputGroup2">Email</label>
                             <div class="input-group">
                                 <div class="input-group-text">Email</div>
-                                <input type="email" class="form-control" id="autoSizingInputGroup2">
+                                <input type="email" class="form-control" required id="autoSizingInputGroup2">
                             </div>
                         </div>
 
                         <div class="col-auto bg-secondary-subtle">
                             <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                            <select class="form-select" id="autoSizingSelect">
-                                <option selected="">I would like to...</option>
+                            <select class="form-select" required id="autoSizingSelect">
+                                <option value="">I would like to...</option>
                                 <option value="1">Purchase a portrait</option>
                                 <option value="2">Commission a portrait</option>
                                 <option value="3">Other</option>
@@ -75,6 +75,60 @@
 
     </div>
     <br>
+
+    <div class="row">
+        <div class="col bg-secondary-subtle">
+
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Stock #</th>
+                    <th scope="col">Character Type</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Status</th>
+                </tr>
+                </thead>
+                <tbody id="artPrintTable" class="table-group-divider">
+                <tr>
+                    <th scope="row">R210</th>
+                    <td>Elf Rogue</td>
+                    <td>24x36</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <th scope="row">W454</th>
+                    <td>Gnome Wizard</td>
+                    <td>36x48</td>
+                    <td>Sold</td>
+                </tr>
+                <tr>
+                    <th scope="row">D654</th>
+                    <td>Red Dragon</td>
+                    <td>36x48</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <th scope="row">F547</th>
+                    <td>Orc Fighter</td>
+                    <td>12x20</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <th scope="row">A94</th>
+                    <td>Elf Archer</td>
+                    <td>36x48</td>
+                    <td>In Progress</td>
+                </tr>
+
+                </tbody>
+
+
+            </table>
+            <h6 id="numberOfRows"></h6>
+
+        </div>
+
+    </div>
     <div class="row">
 
         <div id="footer" class="col bg-secondary-subtle">
@@ -85,6 +139,10 @@
     </div>
 </div>
 
-<!-- End Example Code -->
+<!--call function to populate table on this page -->
+<script src="script.js">
+    populateArtTable();
+  </script>
+
 </body>
 </html>
